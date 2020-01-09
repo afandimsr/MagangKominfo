@@ -11,7 +11,7 @@
                     @csrf
                     <h2>Form Ubah Data Buku</h2>
                         <div class="form-group">
-                            <label for="judul">Judul Buku</label>
+                            <label for="judul">Judul Buk</label>
                             <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" aria-describedby="emailHelp" placeholder="Book Title" name="judul" value="{{$books->judul}}">
                             @error('judul')
                             <div class="invalid-feedback">{{$message}}</div>
