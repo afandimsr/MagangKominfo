@@ -12,7 +12,7 @@
                 </div>
             @endif
                 <table class="table table-light">
-                    <thead class="thead-dark">
+                    <thead class="tableColor">
                        <tr>
                             <th scope="col">No</th>
                             <th>Judul</th>
@@ -37,7 +37,7 @@
                                 echo"Tidak Tersedia";
                             } ?></td>
                             <td>
-                            <a href="/buku/edit/{{$book->id}}" class="badge badge-success" >Edit</a>
+                            <a href="/buku/{{$book->id}}/edit" class="badge badge-success" >Edit</a>
                             <form action="/buku/{{$book->id}}" method="post">
                             @method('delete')
                             @csrf

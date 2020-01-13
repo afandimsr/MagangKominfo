@@ -19,5 +19,5 @@ Route::get('/about','PagesController@about');
 Route::get('/buku','BukuController@index');
 Route::post('/buku','BukuController@store');
 Route::delete('/buku/{book}','BukuController@destroy');
-Route::get('/buku/edit/{book}','BukuController@edit');
-Route::patch('/buku/edit/{book}','BukuController@update');
+Route::get('/buku/{book}/edit','BukuController@edit');
+Route::patch('/buku/{book}/edit','BukuController@update');

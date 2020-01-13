@@ -1,0 +1,25 @@
+.navColor {
+    background-color: #06a224 !important;
+}
+
+.textWhite {
+    color: #fff;
+}
+
+.btnSearch {
+    background-color: #010a03;
+}
+
+.btnSearch:hover {
+    background-color: #056e19;
+    color: #fff;
+}
+
+.btn-outline-success_edit {
+    border: rgb(255, 0, 0);
+}
+
+.tableColor {
+    background-color: #06a224;
+    color: #fff;
+}
