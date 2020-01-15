@@ -9,9 +9,10 @@
             @if (session('status'))
                 <div class="alert alert-success">
                     {{ session('status') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
             @endif
-                <table class="table table-light">
+                <table class=" table table-responsive table-light">
                     <thead class="tableColor">
                        <tr>
                             <th scope="col">No</th>

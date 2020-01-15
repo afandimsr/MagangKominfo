@@ -21,3 +21,9 @@
 
 
 // }
+
+const tombolSidebare = document.getElementById('tombol');
+
+tombolSidebare.addEventListener('click', function () {
+    tombolSidebare.innerHTML = "&#9776";
+});

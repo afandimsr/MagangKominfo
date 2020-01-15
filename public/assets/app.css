@@ -23,3 +23,44 @@
     background-color: #06a224;
     color: #fff;
 }
+
+
+#tombol {
+    text-decoration: none;
+    background-color: #cfd1cf;
+}
+
+
+.sidebar {
+    background-color: #d1f1dd;
+}
+
+.footer {
+    height: 40px;
+    background-color: #06a224;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+
+}
+
+
+@media screen and (max-width :400px) {
+    body {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width :500px) {
+    body {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width :700px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
