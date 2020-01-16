@@ -15,7 +15,7 @@
   <body>
   
     @section('navigation')
-                <nav class="navbar navbar-expand-lg navbar-dark navColor">
+                <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top ">
             <a class="navbar-brand" href="#">Perpustakaan Daerah </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,25 +37,22 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success_edit my-2 my-sm-0 textWhite btnSearch" type="submit">Search</button>
+                <button class="btn  btnSearch" type="submit">Search</button>
                 </form>
             </div>
             </nav> 
     @show
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div id="sidebare">
-            <div class="col-md-2 ">
-            
+<div class="container-fluid navJarak">
+    <div class="row" >
+            <div class="col-md-2 border sidebarColor" id="sidebare">
             @section('sidebar')
-                        <div class="sidebarColor">
+                        <div class="sidebar">
                             <a href="/" >Home</a>
                             <a href="/buku" > Daftar Buku</a>
-                        </div> 
+                            </div>
             @show
-                </div>
                 </div>
             <div class="col-md-10" id="content">
             @yield('container')
