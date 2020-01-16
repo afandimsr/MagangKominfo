@@ -1,10 +1,9 @@
 @extends('template.main')
 @section('title','Form Ubah Data Buku')
 @section('container')
-   
-    <div class="container mt-3">
+<div class="container">
         <div class="row">
-            <div class="col-md">
+            <div class="col-md-6">
         
                     <form action="/buku/{{$books->id}}/edit" method="post">
                     @method('patch')
@@ -37,5 +36,5 @@
 
             </div>
         </div>
-    </div>
+ </div>  
 @endsection

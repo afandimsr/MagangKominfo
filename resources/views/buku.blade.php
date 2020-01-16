@@ -37,12 +37,12 @@
                             }else{
                                 echo"Tidak Tersedia";
                             } ?></td>
-                            <td>
-                            <a href="/buku/{{$book->id}}/edit" class="badge badge-success" >Edit</a>
+                            <td colspan="3" style="display:inline-flex;">
+                            <a href="/buku/{{$book->id}}/edit" class="btn btn-success mr-2" >Edit</a> 
                             <form action="/buku/{{$book->id}}" method="post">
                             @method('delete')
                             @csrf
-                             <button type="submit" class="badge badge-danger" onclick="return confirm('Yakin ingin hapus ?')">Delete</buuton></form></td>
+                             <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin hapus ?')">Delete</buuton></form></td>
                         </tr>
                         @endforeach()
                     </tbody>

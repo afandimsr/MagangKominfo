@@ -1,66 +1,68 @@
 .navColor {
-    background-color: #06a224 !important;
+    background-color: #0d9777;
 }
-
-.textWhite {
-    color: #fff;
-}
-
-.btnSearch {
-    background-color: #010a03;
-}
-
-.btnSearch:hover {
-    background-color: #056e19;
-    color: #fff;
-}
-
-.btn-outline-success_edit {
-    border: rgb(255, 0, 0);
-}
-
-.tableColor {
-    background-color: #06a224;
-    color: #fff;
-}
-
-
-#tombol {
-    text-decoration: none;
-    background-color: #cfd1cf;
-}
-
 
 .sidebar {
-    background-color: #d1f1dd;
+
+
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition-duration: 5s;
+    background-color: red;
+    display: none;
+
 }
 
-.footer {
-    height: 40px;
-    background-color: #06a224;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+footer {
+    margin-top: 10px;
+    background-color: #0d9777;
     color: white;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
 
 }
 
+.sidebarTombol {
+    color: #0d9777;
+    font-weight: 700;
+    background-color: white;
+    margin-top: 7px;
 
-@media screen and (max-width :400px) {
-    body {
-        font-size: 0.6rem;
+}
+
+@media screen and (max-width:700px) {
+    #sidebare {
+        display: none;
+    }
+
+    .sidebarTombol {
+        display: none;
     }
 }
 
-@media screen and (max-width :500px) {
-    body {
-        font-size: 0.7rem;
-    }
+#content {
+    display: contents;
 }
 
-@media screen and (max-width :700px) {
-    body {
-        font-size: 0.8rem;
-    }
+#sidebare {
+    background-color: #a5dacd;
+    transition: ease-in;
+    transition-duration: 10s;
+
+}
+
+#sidebare a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #0c1614;
+}
+
+.sidebarColor a:hover {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #0d9777;
 }
